@@ -139,7 +139,7 @@ img {
 .rectangle {
   max-width: 100%;
   height: 12.5rem;
-  display:flex;
+  display: flex;
   flex: 1 0 100%;
   border: 4px solid #fff;
 }
@@ -425,8 +425,12 @@ input[type="submit"] {
   color: #b64036;
 }
 
-/* MEDIA TABLET SCREEN*/
+/*MEDIA TABLET SCREEN*/
 @media only screen and (min-width: 600px) {
+  /*MENU*/
+  .menu {
+    border-top: none;
+  }
   /*FONTS*/
   .description {
     font-size: 1.10em;
@@ -457,7 +461,27 @@ input[type="submit"] {
     display: flex;
     flex-direction: column;
   }
-
 }
 
 /*MEDIA WEB SCREEN*/
+@media only screen and (min-width: 1240px) {
+  /*FONTS*/
+  .description{
+    font-size: 1.15em;
+  }
+  .sign-up {
+    font-size: 1.50em;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  /*BUTTON*/
+  input[type='email'] {
+    width: 55%;
+    margin-left: 11.5rem;
+  }
+  input[type="submit"] {
+    position: relative;
+    right: 6.25rem;
+    top: 10%;
+  }
+}
