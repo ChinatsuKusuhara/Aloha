@@ -317,6 +317,7 @@ input {
   align-content: center;
   display: inline-block;
   text-transform: capitalize;
+  font-size: 1rem;
 }
 input[type='email'] {
   border-radius: 10rem;
@@ -332,6 +333,9 @@ input[type="submit"] {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
 	font-style: normal;
+  right: 0.25rem;
+  top: .25rem;
+  position: absolute;
 }
 /*  FOOTER */
 .info {
@@ -407,14 +411,12 @@ input[type="submit"] {
   text-decoration: none;
 }
   HOVER */
-.media a:hover {
+/*.media a:hover {
   color: #b64036;
 }
 .menu a:hover {
   color: #b64036;
-
-
-
+}*/
 
 /* @MEDIA */
 
