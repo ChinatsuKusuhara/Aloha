@@ -423,7 +423,6 @@ input[type="submit"] {
 }
 
 /* @MEDIA */
-
 .gone {
   display: none; /* this will make media disappear on MOBILE */
   /*display: initial         this will show media in WEB*/ 
