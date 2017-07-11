@@ -78,7 +78,7 @@ img {
   position: relative;
   background-size: contain, cover;
   display: flex;
-
+  /*background: rgba(76,76,76,1); DO IMG SHADOW OPACITY*/
   }
 .header-new {
   font-family: 'Raleway', sans-serif;
@@ -118,7 +118,7 @@ img {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
 	font-style: normal;
-  font-size: 16px;
+  font-size: 1rem;
   margin: auto;
   line-height: 35px;
   text-align: center;
@@ -414,6 +414,9 @@ input[type="submit"] {
   text-decoration: none;
   text-decoration: none;
 }
+.gone {
+  display: none; /* this will make media disappear on MOBILE */
+}
   /*HOVER */
 .media a:hover {
   color: #b64036;
@@ -422,15 +425,18 @@ input[type="submit"] {
   color: #b64036;
 }
 
-/* @MEDIA */
-.gone {
-  display: none; /* this will make media disappear on MOBILE */
-  /*display: initial         this will show media in WEB*/ 
-}
-
-
 /* MEDIA TABLET SCREEN*/
 @media only screen and (min-width: 600px) {
+  /*FONTS*/
+  .description {
+    font-size: 1.10em;
+  }
+  .sign-up {
+    font-size: 1.25em;
+  }
+  /*CATEGORY*/
+  
+  /*FOOTER*/
   .about-text {
     max-width: 720px;
   }
@@ -440,11 +446,18 @@ input[type="submit"] {
   .footer-social {
     display:flex;
   }
-  /*.info {
+  .info {
     flex-direction: column ;
     justify-content: flex-start;
-  }*/
-  .gone {
-    display:initial;
   }
+  .gone {
+    display:initial; /*this will show media in tablet+web */
+  }
+  .list-social {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
+
+/*MEDIA WEB SCREEN*/
