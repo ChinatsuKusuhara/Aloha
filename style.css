@@ -1,0 +1,424 @@
+html {
+  margin: 0 auto;
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  width: 100%;
+}
+.screen-reader {
+  display: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.aloha-logo {
+  width: 120px;
+  order:1;
+  align-self: flex-start;
+  padding-top: 15px;
+}
+.cart-logo {
+  width: 50px;
+  order: 2;
+  align-self: flex-end;
+  padding-top: 15px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+.banner-text {
+  width: 70%;
+}
+.about-text {
+  width: 720px;
+}
+/*  MENU */
+.menu {
+  display: flex;
+  order: 3;
+  text-align: center;
+  border-top: 1px solid #d7d7d7;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  justify-content: space-around;
+}
+.menu a {
+  font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-style: italic;
+  font-size: 16px;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #e2574c;
+}
+/*  HERO BANNER */
+.banner {
+  background: url('images/project-01/pictures/banner-girl.png') no-repeat center, 
+    url('images/project-01/pictures/flower-bkgd.jpg') repeat-x;
+  height: 400px;
+  max-width: 100%;
+  position: relative;
+  background-size: contain, cover;
+  }
+.header-new {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+	font-style: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding-top: 10rem;
+  text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+}
+.topic {
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+	font-style: normal;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+}
+/*  PRODUCTS */
+.heading-italic {
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+	font-style: italic;
+  font-size: 35px;
+  text-align: center;
+  padding: 50px 0 20px 0;
+}
+.bold {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+	font-style: normal;
+}
+.description {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+	font-style: normal;
+  font-size: 16px;
+  margin: auto;
+  line-height: 35px;
+  text-align: center;
+  padding: 20px 0 50px 0;
+}
+/*  CATEGORY */
+.category a{
+  text-decoration: none;
+  color: #fff;
+  padding: 50px;
+  margin: auto;
+}
+.category {
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: row wrap;
+}
+.rectangle {
+  max-width: 100%;
+  height: 12.5rem;
+  display:flex;
+  flex: 1 0 100%;
+  border: 4px solid #fff;
+}
+.square {
+  max-width: 50%;
+  height: 12.5rem;
+  display: flex;
+  flex: 1 0 100%;
+  border: 4px solid #fff;
+}
+.men {
+  font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  font-size: 25px;
+  background: url('images/project-01/pictures/mens-category.jpg');
+  order: 0;
+  background-size: cover;
+}
+.trends {
+  font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  font-size: 25px;
+  background: url('images/project-01/pictures/trends-category.jpg');
+  order: 1;
+  background-size: cover;
+}
+.glasses {
+  font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  font-size: 25px;
+  background: url('images/project-01/pictures/glasses-category.jpg');
+  order: 2;
+  background-size: cover;
+}
+.sale {
+  font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+  font-size: 25px;
+	font-style: normal;
+  background: url('images/project-01/pictures/sale-category.jpg');
+  order: 3;
+  background-size: cover;
+}
+.bags {
+  font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  font-size: 25px;
+  background: url('images/project-01/pictures/bags-category.jpg');
+  order: 4;
+  background-size: cover;
+}
+.women {
+  font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  font-size: 25px;
+  background: url('images/project-01/pictures/womens-category.jpg');
+  order: 5;
+  background-size: cover;
+}
+
+/*  PRODUCTS */
+.stretch-knit-dress {
+  font-family: 'Playfair Display', serif;
+	font-weight: normal;
+	font-style: normal;
+  text-transform: capitalize;
+  font-size: 23px;
+  color: #e2574c;
+}
+.cotton-blue-shirt {
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+	font-style: normal;
+  text-transform: capitalize;
+  font-size: 23px;
+  color: #e2574c;
+}
+.checked-stretch-dress {
+  font-family: 'Playfair Display', serif;
+	font-weight: normal;
+	font-style: normal;
+  text-transform: capitalize;
+  font-size: 23px;
+  color: #e2574c;
+}
+.blue-hipster-bag {
+  font-family: 'Playfair Display', serif;
+	font-weight: normal;
+	font-style: normal;
+  text-transform: capitalize;
+  font-size: 23px;
+  color: #e2574c;
+}
+.denim-overall-shorts {
+  font-family: 'Playfair Display', serif;
+	font-weight: normal;
+	font-style: normal;
+  text-transform: capitalize;
+  font-size: 23px;
+  color: #e2574c;
+}
+.pink-dotted-dress {
+  font-family: 'Playfair Display', serif;
+	font-weight: normal;
+	font-style: normal;
+  text-transform: capitalize;
+  font-size: 23px;
+  color: #e2574c;
+}
+.blue-silk-dress {
+  font-family: 'Playfair Display', serif;
+	font-weight: normal;
+	font-style: normal;
+  text-transform: capitalize;
+  font-size: 23px;
+  color: #e2574c;
+}
+.cotton-yellow-tshirt {
+  font-family: 'Playfair Display', serif;
+	font-weight: normal;
+	font-style: normal;
+  text-transform: capitalize;
+  font-size: 23px;
+  color: #e2574c;
+}
+.merchandise {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+	font-style: normal;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #969696;
+}
+.price {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  color: #969696;
+}
+/*  SUBSCRIPTION */
+.ocean-background {
+  background: url('images/project-01/pictures/wave-bkgd.jpg') no-repeat center;
+  position: relative;
+  background-size: cover;
+  margin: auto;
+  border-bottom: 0.5rem solid white;
+  padding: 3rem 0;  
+}
+.heading-updates {
+  text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+  color: #fff;
+}
+.sign-up {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+	font-style: normal;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+  line-height: 2.5rem;
+  padding: 20px 0 50px 0;
+  text-align: center;
+}
+.email-sub {
+  margin: 1.5rem auto 0;
+  position: relative;
+  width: 90%;
+}
+input {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  align-content: center;
+  display: inline-block;
+  text-transform: capitalize;
+}
+input[type='email'] {
+  border-radius: 10rem;
+  padding: 0.5rem 1.75rem;
+  padding-right: 150px;
+  width: 100%;
+  border: 0;
+}
+input[type="submit"] {
+  border-radius: 10rem;
+  background-color: #e2574c;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+	font-style: normal;
+}
+/*  FOOTER */
+.info {
+  line-height: 1.5rem;
+}
+.address {
+  padding-top: 10px;
+  color: #969696;
+  font-family: 'Playfair Display';
+  font-weight: normal;
+	font-style: normal;
+}
+.copyright {
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+	font-style: normal;
+  font-size: 15px;
+}
+.power {
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+	font-weight: normal;
+	font-style: normal;
+  font-size: 15px;
+}
+.phone {
+  padding-top: 10px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+  font-size: 14px;
+}
+.email {
+  text-decoration: underline;
+  font-family: 'Playfair Display', serif;
+	font-weight: normal;
+	font-style: normal;
+  font-size: 15px;
+}
+.list-social {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  justify-content: space-around;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+.footer-social { 
+  background-color: #242424;
+  text-align: center;
+  padding: 4rem 0;
+}
+/*  SOCIAL MEDIA ICONS  */
+.icons {
+  color: #fff;
+  background-color: #242424;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  color: white;
+}
+.media a{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+	font-style: normal;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  text-decoration: none;
+}
+/*  HOVER */
+.media a:hover {
+  color: #b64036;
+}
+.menu a:hover {
+  color: #b64036;
+}
+
+
+
+/* @MEDIA */
+
+.gone {
+  display: none; /* this will make media disappear on MOBILE */
+  /*display: initial         this will show media in WEB*/ 
+}
