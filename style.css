@@ -71,14 +71,13 @@ img {
 }
 /*  HERO BANNER */
 .banner {
- background: url('images/pictures/banner-girl.png') no-repeat center, 
+  background: url('images/pictures/banner-girl.png') no-repeat center, 
     url('images/pictures/flower-bkgd.jpg') repeat-x;
   height: 400px;
   max-width: 100%;
   position: relative;
   background-size: contain, cover;
   display: flex;
-  /*background: rgba(76,76,76,1); DO IMG SHADOW OPACITY*/
   }
 .header-new {
   font-family: 'Raleway', sans-serif;
@@ -135,6 +134,10 @@ img {
   text-transform: uppercase;
   display: flex;
   flex-flow: row wrap;
+  font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  font-size: 25px;
 }
 .rectangle {
   max-width: 100%;
@@ -151,55 +154,33 @@ img {
   border: 4px solid #fff;
 }
 .men {
-  font-family: 'Raleway', sans-serif;
-	font-weight: 500;
-	font-style: normal;
-  font-size: 25px;
   background: url('images/pictures/mens-category.jpg');
   order: 0;
   background-size: cover;
+
 }
 .trends {
-  font-family: 'Raleway', sans-serif;
-	font-weight: 500;
-	font-style: normal;
-  font-size: 25px;
   background: url('images/pictures/trends-category.jpg');
   order: 1;
   background-size: cover;
+
 }
 .glasses {
-  font-family: 'Raleway', sans-serif;
-	font-weight: 500;
-	font-style: normal;
-  font-size: 25px;
   background: url('images/pictures/glasses-category.jpg');
   order: 2;
   background-size: cover;
 }
 .sale {
-  font-family: 'Raleway', sans-serif;
-	font-weight: 500;
-  font-size: 25px;
-	font-style: normal;
   background: url('images/pictures/sale-category.jpg');
   order: 3;
   background-size: cover;
 }
 .bags {
-  font-family: 'Raleway', sans-serif;
-	font-weight: 500;
-	font-style: normal;
-  font-size: 25px;
   background: url('images/pictures/bags-category.jpg');
   order: 4;
   background-size: cover;
 }
 .women {
-  font-family: 'Raleway', sans-serif;
-	font-weight: 500;
-	font-style: normal;
-  font-size: 25px;
   background: url('images/pictures/womens-category.jpg');
   order: 5;
   background-size: cover;
