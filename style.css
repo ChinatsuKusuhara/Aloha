@@ -71,12 +71,13 @@ img {
 }
 /*  HERO BANNER */
 .banner {
-  background: url('images/pictures/banner-girl.png') no-repeat center, 
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), 
+    url('images/pictures/banner-girl.png') no-repeat center, 
     url('images/pictures/flower-bkgd.jpg') repeat-x;
   height: 400px;
   max-width: 100%;
   position: relative;
-  background-size: contain, cover;
+  background-size: cover, contain;
   display: flex;
   }
 .header-new {
@@ -154,34 +155,38 @@ img {
   border: 4px solid #fff;
 }
 .men {
-  background: url('images/pictures/mens-category.jpg');
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), 
+   url('images/pictures/mens-category.jpg');
   order: 0;
   background-size: cover;
-
 }
 .trends {
-  background: url('images/pictures/trends-category.jpg');
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), 
+   url('images/pictures/trends-category.jpg');
   order: 1;
   background-size: cover;
-
 }
 .glasses {
-  background: url('images/pictures/glasses-category.jpg');
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), 
+   url('images/pictures/glasses-category.jpg');
   order: 2;
   background-size: cover;
 }
 .sale {
-  background: url('images/pictures/sale-category.jpg');
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), 
+   url('images/pictures/sale-category.jpg');
   order: 3;
   background-size: cover;
 }
 .bags {
-  background: url('images/pictures/bags-category.jpg');
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),
+   url('images/pictures/bags-category.jpg');
   order: 4;
   background-size: cover;
 }
 .women {
-  background: url('images/pictures/womens-category.jpg');
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), 
+   url('images/pictures/womens-category.jpg');
   order: 5;
   background-size: cover;
 }
@@ -268,7 +273,8 @@ img {
 }
 /*  SUBSCRIPTION */
 .ocean-background {
-  background: url('images/pictures/wave-bkgd.jpg') no-repeat center;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),
+   url('images/pictures/wave-bkgd.jpg') no-repeat center;
   position: relative;
   background-size: cover;
   margin: auto;
@@ -420,7 +426,8 @@ input[type="submit"] {
     font-size: 1.25em;
   }
   /*CATEGORY*/
-  
+  <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+
   /*FOOTER*/
   .about-text {
     max-width: 720px;
