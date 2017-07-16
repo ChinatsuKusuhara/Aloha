@@ -411,6 +411,9 @@ input[type="submit"] {
 .menu a:hover {
   color: #b64036;
 }
+.category a:hover {
+  color: #b64036;
+}
 
 /*MEDIA TABLET SCREEN*/
 @media only screen and (min-width: 600px) {
@@ -425,9 +428,6 @@ input[type="submit"] {
   .sign-up {
     font-size: 1.25em;
   }
-  /*CATEGORY*/
-  <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
-
   /*FOOTER*/
   .about-text {
     max-width: 720px;
