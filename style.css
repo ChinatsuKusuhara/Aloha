@@ -457,6 +457,7 @@ input[type="submit"] {
   }
   .footer-social {
     display:flex;
+
   }
   .info {
     flex-direction: column ;
