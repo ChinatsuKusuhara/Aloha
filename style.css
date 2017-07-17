@@ -200,7 +200,6 @@ img {
   text-align: center
 }
 /*  PRODUCTS */
-
 .stretch-knit-dress {
   font-family: 'Playfair Display', serif;
 	font-weight: normal;
@@ -272,7 +271,6 @@ img {
   font-size: 23px;
   color: #e2574c;
   line-height: 2em;
-
 }
 .merchandise {
   font-family: 'Raleway', sans-serif;
@@ -400,7 +398,7 @@ input[type="submit"] {
 .footer-social { 
   background-color: #242424;
   text-align: center;
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 /*  SOCIAL MEDIA ICONS  */
 .icons {
@@ -438,8 +436,18 @@ input[type="submit"] {
 /*MEDIA TABLET SCREEN*/
 @media only screen and (min-width: 600px) {
   /*MENU*/
+  .aloha-logo {
+    display: flex;
+    order: 0;
+  }
   .menu {
     border-top: none;
+    display: flex;
+    order: 1;
+  }
+  .cart-logo {
+    display: flex;
+    order: 2;
   }
   /*FONTS*/
   .description {
@@ -457,18 +465,23 @@ input[type="submit"] {
   }
   .footer-social {
     display:flex;
-
+    justify-content: space-between;
+    padding-left: 1rem;
   }
   .info {
+    display: flex;
     flex-direction: column ;
-    justify-content: flex-start;
+    text-align: left;
+    padding-top: 1rem;
   }
   .gone {
     display:initial; /*this will show media in tablet+web */
+    line-height: 2rem;
   }
   .list-social {
     display: flex;
     flex-direction: column;
+    text-align: left;
   }
 }
 
