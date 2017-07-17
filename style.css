@@ -200,6 +200,7 @@ img {
   text-align: center
 }
 /*  PRODUCTS */
+
 .stretch-knit-dress {
   font-family: 'Playfair Display', serif;
 	font-weight: normal;
@@ -207,6 +208,7 @@ img {
   text-transform: capitalize;
   font-size: 23px;
   color: #e2574c;
+  line-height: 2em;
 }
 .cotton-blue-shirt {
   font-family: 'Playfair Display', serif;
@@ -215,6 +217,7 @@ img {
   text-transform: capitalize;
   font-size: 23px;
   color: #e2574c;
+  line-height: 2em;
 }
 .checked-stretch-dress {
   font-family: 'Playfair Display', serif;
@@ -223,6 +226,7 @@ img {
   text-transform: capitalize;
   font-size: 23px;
   color: #e2574c;
+  line-height: 2em;
 }
 .blue-hipster-bag {
   font-family: 'Playfair Display', serif;
@@ -231,6 +235,7 @@ img {
   text-transform: capitalize;
   font-size: 23px;
   color: #e2574c;
+  line-height: 2em;
 }
 .denim-overall-shorts {
   font-family: 'Playfair Display', serif;
@@ -239,6 +244,7 @@ img {
   text-transform: capitalize;
   font-size: 23px;
   color: #e2574c;
+  line-height: 2em;
 }
 .pink-dotted-dress {
   font-family: 'Playfair Display', serif;
@@ -247,6 +253,7 @@ img {
   text-transform: capitalize;
   font-size: 23px;
   color: #e2574c;
+  line-height: 2em;
 }
 .blue-silk-dress {
   font-family: 'Playfair Display', serif;
@@ -255,6 +262,7 @@ img {
   text-transform: capitalize;
   font-size: 23px;
   color: #e2574c;
+  line-height: 2em;
 }
 .cotton-yellow-tshirt {
   font-family: 'Playfair Display', serif;
@@ -263,14 +271,17 @@ img {
   text-transform: capitalize;
   font-size: 23px;
   color: #e2574c;
+  line-height: 2em;
+
 }
 .merchandise {
   font-family: 'Raleway', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
 	font-style: normal;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 10px;
   color: #969696;
+  line-height: 2rem;
 }
 .price {
   font-family: 'Raleway', sans-serif;
@@ -278,6 +289,7 @@ img {
   font-style: normal;
   font-size: 15px;
   color: #969696;
+  line-height: 2em;
 }
 /*  SUBSCRIPTION */
 .ocean-background {

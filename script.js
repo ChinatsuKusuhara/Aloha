@@ -9,6 +9,6 @@ $(document).ready(function() {
     freeScroll: true,
     wrapAround: true,
     groupCells: true,
-    autoPlay: true
+   // autoPlay: true
   });
 });
