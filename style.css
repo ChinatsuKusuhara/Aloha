@@ -439,15 +439,22 @@ input[type="submit"] {
   .aloha-logo {
     display: flex;
     order: 0;
+    margin:0;
+    padding: 0;
   }
   .menu {
     border-top: none;
     display: flex;
     order: 1;
+    width: 60%;
+    margin: 0;
+    padding-top: 7rem;
   }
   .cart-logo {
     display: flex;
     order: 2;
+    margin: 0;
+    padding-bottom: .15em;
   }
   /*CATEGORIES*/
   .rectangle{
