@@ -197,7 +197,7 @@ img {
   margin: center;
   border-radius: 5px;
   counter-increment: carousel-cell;
-  text-align: center
+  text-align: center;
 }
 /*  PRODUCTS */
 .stretch-knit-dress {
@@ -449,6 +449,19 @@ input[type="submit"] {
     display: flex;
     order: 2;
   }
+  /*CATEGORIES*/
+  .rectangle{
+    flex-basis: 44%;
+    background-size: cover;
+  }
+  .square {
+    flex-basis: 27%;
+    background-size: cover;
+  }
+  /*CAROUSEL*/
+  .carousel-cell {
+    width: 50%;
+  }
   /*FONTS*/
   .description {
     font-size: 1.10em;
@@ -487,6 +500,10 @@ input[type="submit"] {
 
 /*MEDIA WEB SCREEN*/
 @media only screen and (min-width: 1240px) {
+  /*Carousel*/
+  .carousel-cell {
+    width: 25%;
+  }
   /*FONTS*/
   .description{
     font-size: 1.15em;
