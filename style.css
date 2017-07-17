@@ -190,7 +190,15 @@ img {
   order: 5;
   background-size: cover;
 }
-
+/*Carousel */
+.carousel-cell {
+  width: 100%;
+  height: auto;
+  margin: center;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  text-align: center
+}
 /*  PRODUCTS */
 .stretch-knit-dress {
   font-family: 'Playfair Display', serif;

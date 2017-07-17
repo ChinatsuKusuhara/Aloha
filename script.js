@@ -1,13 +1,14 @@
 // carousel
 $(document).ready(function() {
-  var elem = document.querySelector('.main-carousel');
-
-  var flkty = new Flickity( elem, {
-  // options
-  cellAlign: 'left',
-  contain: true
+  $('.main-carousel').flickity({
+    cellAlign: 'left',
+    contain: true,
+    cellSelector: '.carousel-cell',
+    accessibility: false,
+    contain: true,
+    freeScroll: true,
+    wrapAround: true,
+    groupCells: true,
+    autoPlay: true
   });
-
-// element argument can be a selector string
-//   for an individual element
 });
