@@ -520,9 +520,14 @@ input[type="submit"] {
 
 /*MEDIA WEB SCREEN*/
 @media only screen and (min-width: 1240px) {
-  .container {
-    max-width: 1240px;
+  .banner {
+    height: 35rem;
+    background-size: cover, 16rem 42rem, contain;
+
   }
+  /*.container {
+    max-width: 1240px;
+  }*/
   .rectangle {
     flex-basis: 50%;
   }
@@ -537,5 +542,6 @@ input[type="submit"] {
   .description{
     font-size: 1.15em;
   }
+}
 
   /*BUTTON*/
