@@ -439,6 +439,9 @@ input[type="submit"] {
 .category a:hover {
   color: #b64036;
 }
+ .menu a {
+    text-decoration: none;
+  }
 
 /*MEDIA TABLET SCREEN*/
 @media only screen and (min-width: 600px) {
@@ -458,9 +461,6 @@ input[type="submit"] {
     order: 2;
     width: 60%;
     margin: 0;
-  }
-  .menu a {
-    text-decoration: none;
   }
   .cart-logo {
     display: flex;
@@ -528,9 +528,12 @@ input[type="submit"] {
     background-size: cover, 16rem 42rem, contain;
 
   }
-  /*.container {
+  .header {
     max-width: 1240px;
-  }*/
+  }
+  .menu {
+    padding-top: 5rem;
+  }
   .rectangle {
     flex-basis: 50%;
     height: 20rem;
