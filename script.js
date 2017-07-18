@@ -11,5 +11,15 @@ $(document).ready(function() {
     groupCells: true,
    // autoPlay: true
   });
+  $('.email-sub').on('submit', function(event) {
+    var update = false;
+    event.preventDefault();
+    if($($('.email-sub input[name="name"]')).val() == '') {
+      alert('Please enter a valid email address!');
+      update = true; 
+    } else {
+      alert ('Thank you for Subscribing!');
+    }
+  })
 });
 
