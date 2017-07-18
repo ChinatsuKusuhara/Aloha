@@ -72,12 +72,12 @@ img {
 /*  HERO BANNER */
 .banner {
   background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), 
-    url('images/pictures/banner-girl.png') no-repeat center, 
-    url('images/pictures/flower-bkgd.jpg') repeat-x;
+    url('images/pictures/banner-girl.png') no-repeat center 70px, 
+    url('images/pictures/flower-bkgd.jpg') repeat-x center top;
   height: 400px;
   max-width: 100%;
   position: relative;
-  background-size: cover, contain;
+  background-size: cover, 150px 369px, cover;
   display: flex;
   }
 .header-new {
@@ -108,6 +108,7 @@ img {
   font-size: 35px;
   text-align: center;
   padding: 50px 0 20px 0;
+  padding-bottom: 3rem;
 }
 .bold {
   font-family: 'Playfair Display', serif;
@@ -293,6 +294,7 @@ img {
 .ocean-background {
   background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),
    url('images/pictures/wave-bkgd.jpg') no-repeat center;
+  background-position: bottom;
   position: relative;
   background-size: cover;
   margin: auto;
@@ -438,32 +440,34 @@ input[type="submit"] {
   /*MENU*/
   .aloha-logo {
     display: flex;
-    order: 0;
+    order: 1;
     margin:0;
     padding: 0;
   }
   .menu {
     border-top: none;
     display: flex;
-    order: 1;
+    order: 2;
     width: 60%;
     margin: 0;
-    padding-top: 7rem;
+    padding-top: 5rem;
   }
   .cart-logo {
     display: flex;
-    order: 2;
+    order: 3;
     margin: 0;
-    padding-bottom: .15em;
+    padding-bottom: 1.15em;
   }
   /*CATEGORIES*/
   .rectangle{
     flex-basis: 44%;
-    background-size: cover;
+    background-size: contain, cover;
+    /*background-position: center;*/
   }
   .square {
     flex-basis: 27%;
     background-size: cover;
+    background-position: center;
   }
   /*CAROUSEL*/
   .carousel-cell {
@@ -497,11 +501,15 @@ input[type="submit"] {
   .gone {
     display:initial; /*this will show media in tablet+web */
     line-height: 2rem;
+    margin-left: 5px;
   }
   .list-social {
     display: flex;
     flex-direction: column;
     text-align: left;
+  }
+  .fa {
+    margin-right: 5px;
   }
 }
 
