@@ -104,11 +104,9 @@ http://flickity.metafizzy.co
 .flickity-page-dots {
   width: 100%;
   bottom: -25px;
-  padding: 50px;
   margin: 0;
   list-style: none;
   text-align: center;
-  height: 2em;
 }
 
 .flickity-rtl .flickity-page-dots { direction: rtl; }
@@ -131,6 +129,4 @@ http://flickity.metafizzy.co
 ol.flickity-page-dots {
   display: flex;
   justify-content: center;
-  padding-top: 1rem;
-  height: 4em;
 }
