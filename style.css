@@ -459,6 +459,9 @@ input[type="submit"] {
     width: 60%;
     margin: 0;
   }
+  .menu a {
+    text-decoration: none;
+  }
   .cart-logo {
     display: flex;
     order: 3;
@@ -530,9 +533,11 @@ input[type="submit"] {
   }*/
   .rectangle {
     flex-basis: 50%;
+    height: 20rem;
   }
   .square {
     flex-basis: 25%;
+    height: 20rem;
   }
   /*Carousel*/
   .carousel-cell {
