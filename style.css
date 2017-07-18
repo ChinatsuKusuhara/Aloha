@@ -140,7 +140,7 @@ img {
   font-family: 'Raleway', sans-serif;
 	font-weight: 500;
 	font-style: normal;
-  font-size: 25px;
+  font-size: 19px;
 }
 .rectangle {
   max-width: 100%;
@@ -467,13 +467,11 @@ input[type="submit"] {
   }
   /*CATEGORIES*/
   .rectangle{
-    flex-basis: 44%;
-    background-size: contain, cover;
+    flex-basis: 50%;
     /*background-position: center;*/
   }
   .square {
-    flex-basis: 27%;
-    background-size: cover;
+    flex-basis: 25%;
     background-position: center;
   }
   /*CAROUSEL*/
@@ -526,11 +524,10 @@ input[type="submit"] {
     max-width: 1240px;
   }
   .rectangle {
-    height: 13.5rem;
     flex-basis: 50%;
   }
   .square {
-    height:13.5rem;
+    flex-basis: 25%;
   }
   /*Carousel*/
   .carousel-cell {
