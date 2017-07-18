@@ -11,5 +11,8 @@ $(document).ready(function() {
     groupCells: true,
    // autoPlay: true
   });
+ $(document).querySelector('#about').scrollIntoView({ 
+  behavior: 'smooth' 
+  });
 });
 
