@@ -1,5 +1,8 @@
 // carousel
 $(document).ready(function() {
+   $("a[href^='#']").not("a[href='#']").click(function() {
+      $("#"+$(this).attr("href").slice(1)+"").focus();
+   });
   $('.main-carousel').flickity({
     cellAlign: 'left',
     contain: true,
@@ -9,7 +12,7 @@ $(document).ready(function() {
     freeScroll: true,
     wrapAround: true,
     groupCells: true,
-   // autoPlay: true
+    autoPlay: true
   });
   $('.email-sub').on('submit', function(event) {
     var update = false;

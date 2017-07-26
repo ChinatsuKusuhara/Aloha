@@ -1,4 +1,4 @@
-<! DOCTYLE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -13,16 +13,17 @@
   <script src="tota11y.min.js"></script>
 </head>
 <body>
+  <a class="screen-reader-text" href="#about">Skip to content</a>
   <header class="header container">
     <div class="aloha-logo">
       <h1 class="screen-reader">Aloha</h1>
       <img class="logo" src="images/pictures/aloha-logo.svg" alt="Aloha Logo"> 
     </div>
-    <nav class="menu">
-        <a href="#about">about</a>
-        <a href="#shop">shop</a>
-        <a href="#featured">featured</a>
-        <a href="#updates">updates</a>
+    <ul class="menu">
+        <li class="about">about</li>
+        <li class"shop">shop</li>
+        <li class="featured">featured</li>
+        <li class="updates">updates</li>
     </nav>
     <div class="cart-logo">
       <img class="cart" src="images/pictures/cart-icon.svg" alt="Shopping Cart">
@@ -35,7 +36,7 @@
     </div>
   </section>
   <div class="about-text container"> 
-    <a id="about"></a>
+     <a id="about"></a> 
     <h2 id="about" class="heading-italic">Hand-Crafted <span class="bold">Styles</span></h2>
     <p class="description">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for
       updates below.</p>
@@ -169,6 +170,7 @@
   integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
   crossorigin="anonymous"></script>
   <script src="script.js"></script>
+  <script src="scroll.js"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 </body>
