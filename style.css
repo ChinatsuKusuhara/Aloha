@@ -196,7 +196,7 @@ img {
 .carousel-cell {
   width: 100%;
   height: auto;
-  margin: center;
+  margin: auto;
   border-radius: 5px;
   counter-increment: carousel-cell;
   text-align: center;
