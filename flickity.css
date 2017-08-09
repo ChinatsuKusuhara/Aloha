@@ -43,7 +43,7 @@ http://flickity.metafizzy.co
 }
 
 /* ---- previous/next buttons ---- */
-
+/*  
 .flickity-prev-next-button {
   position: absolute;
   top: 50%;
@@ -53,9 +53,9 @@ http://flickity.metafizzy.co
   border-radius: 50%;
   background: white;
   background: hsla(0, 0%, 100%, 0.75);
-  cursor: pointer;*/
+  cursor: pointer;*/ */
   /* vertically center */
-  -webkit-transform: translateY(-50%);
+  /* -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
@@ -71,9 +71,9 @@ http://flickity.metafizzy.co
 }
 
 .flickity-prev-next-button.previous { left: 10px; }
-.flickity-prev-next-button.next { right: 10px; }
+.flickity-prev-next-button.next { right: 10px; } */
 /* right to left */
-.flickity-rtl .flickity-prev-next-button.previous {
+/* .flickity-rtl .flickity-prev-next-button.previous {
   left: auto;
   right: 10px;
 }
@@ -97,7 +97,7 @@ http://flickity.metafizzy.co
 
 .flickity-prev-next-button .arrow {
   fill: #333;
-}
+}  */
 
 /* ---- page dots ---- */
 

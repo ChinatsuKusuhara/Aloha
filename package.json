@@ -1,0 +1,19 @@
+{
+  "name": "project01",
+  "version": "1.0.0",
+  "description": "Aloha Project",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChinatsuKusuhara/Aloha_pt1.git"
+  },
+  "author": "Chinatsu Kusuhara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChinatsuKusuhara/Aloha_pt1/issues"
+  },
+  "homepage": "https://github.com/ChinatsuKusuhara/Aloha_pt1#readme"
+}
