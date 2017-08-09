@@ -1,8 +1,8 @@
 // carousel
 $(document).ready(function() {
-   $("a[href^='#']").not("a[href='#']").click(function() {
-      $("#"+$(this).attr("href").slice(1)+"").focus();
-   });
+  //  $("a[href^='#']").not("a[href='#']").click(function() {
+  //     $("#"+$(this).attr("href").slice(1)+"").focus();
+  // })
   $('.main-carousel').flickity({
     cellAlign: 'left',
     contain: true,
@@ -13,7 +13,7 @@ $(document).ready(function() {
     wrapAround: true,
     groupCells: true,
     autoPlay: true
-  });
+  }); 
   $('.email-sub').on('submit', function(event) {
     var update = false;
     event.preventDefault();
@@ -23,6 +23,7 @@ $(document).ready(function() {
     } else {
       alert ('Thank you for Subscribing!');
     }
-  })
+  });
 });
+
 
