@@ -403,6 +403,8 @@ input[type="submit"] {
     order: 2;
     width: 60%;
     margin: 0;
+    padding-top: 5rem;
+
   }
   .cart-logo {
     display: flex;
@@ -468,7 +470,6 @@ input[type="submit"] {
   .banner {
     height: 35rem;
     background-size: cover, 16rem 42rem, contain;
-
   }
   .header {
     max-width: 1240px;

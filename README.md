@@ -1,5 +1,12 @@
-1st project:
+# Aloha Project
 
-We learnt how to set up our site using html and style with style.css. 
+This e-commerce website is created with HTML and CSS, and some jQuery. 
+A responsive website using mobile first approach.  Also accessible in tablet and web screens.   
 
-We learnt to also incorporate jQuery and added Flickity extension for the carousel. 
+## Built With..
+
+* [jQuery] (https://jquery.com/)
+* [Flickity] (https://flickity.metafizzy.co/)
+* HTML
+* CSS
+
