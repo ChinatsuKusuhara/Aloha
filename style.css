@@ -65,8 +65,8 @@ img {
 }
 .menu li {
   font-family: 'Raleway', sans-serif;
-	font-weight: 500;
-	font-style: italic;
+  font-weight: 500;
+  font-style: italic;
   font-size: 16px;
   font-style: normal;
   text-transform: uppercase;
@@ -86,7 +86,7 @@ img {
 .header-new {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-	font-style: normal;
+  font-style: normal;
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
@@ -96,7 +96,7 @@ img {
 .topic {
   font-family: 'Playfair Display', serif;
   font-weight: normal;
-	font-style: normal;
+  font-style: normal;
   font-size: 2.5rem;
   text-transform: capitalize;
   text-align: center;
@@ -107,7 +107,7 @@ img {
 .heading-italic {
   font-family: 'Playfair Display', serif;
   font-weight: normal;
-	font-style: italic;
+  font-style: italic;
   font-size: 35px;
   text-align: center;
   margin-bottom: 1.5rem;
@@ -116,12 +116,12 @@ img {
 .bold {
   font-family: 'Playfair Display', serif;
   font-weight: bold;
-	font-style: normal;
+  font-style: normal;
 }
 .description {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-	font-style: normal;
+  font-style: normal;
   font-size: 1rem;
   margin: auto;
   line-height: 35px;
@@ -139,8 +139,8 @@ img {
   display: flex;
   flex-flow: row wrap;
   font-family: 'Raleway', sans-serif;
-	font-weight: 500;
-	font-style: normal;
+  font-weight: 500;
+  font-style: normal;
   font-size: 19px;
 }
 .rectangle {
@@ -205,8 +205,8 @@ img {
 /*  PRODUCTS */
 .clothes {
   font-family: 'Playfair Display', serif;
-	font-weight: normal;
-	font-style: normal;
+  font-weight: normal;
+  font-style: normal;
   text-transform: capitalize;
   font-size: 23px;
   color: #e2574c;
@@ -215,7 +215,7 @@ img {
 .merchandise {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-	font-style: normal;
+  font-style: normal;
   text-transform: uppercase;
   font-size: 10px;
   color: #969696;
@@ -238,7 +238,7 @@ img {
 .sign-up {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-	font-style: normal;
+  font-style: normal;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
   line-height: 2.5rem;
@@ -274,7 +274,7 @@ input[type="submit"] {
   color: #fff;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-	font-style: normal;
+  font-style: normal;
   right: .25rem;
   top: .25rem;
   position: absolute;
@@ -290,29 +290,29 @@ input[type="submit"] {
   color: #969696;
   font-family: 'Playfair Display';
   font-weight: normal;
-	font-style: normal;
+  font-style: normal;
 }
 .copyright {
   color: #fff;
   font-family: 'Playfair Display', serif;
   font-weight: normal;
-	font-style: normal;
+  font-style: normal;
   font-size: 15px;
 }
 .phone {
   padding-top: 10px;
   color: #fff;
   font-family: 'Raleway', sans-serif;
-	font-weight: 300;
-	font-style: normal;
-  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
 }
 .email {
   text-decoration: underline;
   font-family: 'Playfair Display', serif;
-	font-weight: normal;
-	font-style: normal;
-  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
 }
 .list-social {
   color: #fff;
@@ -336,7 +336,6 @@ input[type="submit"] {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-end;
-  color: white;
 }
 .wrapper {
   text-align: center;
@@ -344,10 +343,9 @@ input[type="submit"] {
 .media a{
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-	font-style: normal;
+  font-style: normal;
   font-size: 16px;
   color: #fff;
-  text-decoration: none;
   text-decoration: none;
 }
 .gone {
@@ -363,9 +361,9 @@ input[type="submit"] {
 .category a:hover {
   color: #b64036;
 }
- .menu a {
-    text-decoration: none;
-  }
+.menu a {
+   text-decoration: none;
+ }
 
 .screen-reader-text:focus {
    clip: auto !important;
@@ -425,14 +423,11 @@ input[type="submit"] {
   .carousel-cell {
     width: 50%;
   }
-  /*FONTS*/
+
   .description {
     font-size: 1.10em;
   }
   /*FOOTER*/
-  .about-text {
-    max-width: 720px;
-  }
   .footer-social {
     display:flex;
     justify-content: space-between;
