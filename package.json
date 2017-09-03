@@ -1,19 +1,35 @@
 {
-  "name": "project01",
+  "name": "aloha",
   "version": "1.0.0",
-  "description": "Aloha Project",
+  "description": "This e-commerce website is created with HTML and CSS, and some jQuery.  A responsive website using mobile first approach.  Also accessible in tablet and web screens.",
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChinatsuKusuhara/Aloha_pt1.git"
+    "url": "git+https://github.com/ChinatsuKusuhara/Aloha.git"
   },
   "author": "Chinatsu Kusuhara",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ChinatsuKusuhara/Aloha_pt1/issues"
+    "url": "https://github.com/ChinatsuKusuhara/Aloha/issues"
   },
-  "homepage": "https://github.com/ChinatsuKusuhara/Aloha_pt1#readme"
+  "homepage": "https://github.com/ChinatsuKusuhara/Aloha#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "eslint": "^4.6.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^4.0.0",
+    "gulp-prettyerror": "^1.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
 }

@@ -1,0 +1,31 @@
+/* HERO BANNER */ 
+.banner {
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), 
+    url('../../images/pictures/banner-girl.png') no-repeat center 70px, 
+    url('../../images/pictures/flower-bkgd.jpg') repeat-x center top;
+  height: 400px;
+  max-width: 100%;
+  position: relative;
+  background-size: cover, 150px 369px, cover;
+  display: flex;
+  }
+.header-new {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+}
+.topic {
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+}

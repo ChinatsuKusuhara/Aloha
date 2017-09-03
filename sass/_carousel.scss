@@ -1,0 +1,126 @@
+/*Carousel */
+.carousel-cell {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 5px;
+  counter-increment: carousel-cell; 
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*MEDIA TABLET SCREEN*/
+@media only screen and (min-width: 600px) {
+  .header {
+    max-width: 720px;
+  }
+  /*MENU*/
+  .aloha-logo {
+    display: flex;
+    order: 1;
+    margin:0;
+    padding: 0;
+  }
+  .menu {
+    border-top: none;
+    display: flex;
+    order: 2;
+    width: 60%;
+    margin: 0;
+    padding-top: 5rem;
+
+  }
+  .cart-logo {
+    display: flex;
+    order: 3;
+    margin: 0;
+    padding-bottom: 1.15em;
+  }
+  /*CATEGORIES*/
+  .rectangle{
+    flex-basis: 50%;
+    /*background-position: center;*/
+  }
+  .square {
+    flex-basis: 25%;
+    background-position: center;
+  }
+  /*CAROUSEL*/
+  .carousel-cell {
+    width: 50%;
+  }
+
+  .description {
+    font-size: 1.10em;
+  }
+  /*FOOTER*/
+  .footer-social {
+    display:flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+  }
+  .info {
+    display: flex;
+    flex-direction: column ;
+    text-align: left;
+    padding-top: 1rem;
+  }
+  .gone {
+    display:initial; /*this will show media in tablet+web */
+    line-height: 2rem;
+    margin-left: 5px;
+  }
+  .list-social {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .fa {
+    margin-right: 5px;
+  }
+  .email-sub{
+    width: 67%;
+  }
+  .wrapper {
+    max-width: 720px;
+  }
+}
+
+/*MEDIA WEB SCREEN*/
+@media only screen and (min-width: 1240px) {
+  .banner {
+    height: 35rem;
+    background-size: cover, 16rem 42rem, contain;
+  }
+  .header {
+    max-width: 1240px;
+  }
+  .menu {
+    padding-top: 5rem;
+  }
+  .rectangle {
+    flex-basis: 50%;
+    height: 20rem;
+  }
+  .square {
+    flex-basis: 25%;
+    height: 20rem;
+  }
+  /*Carousel*/
+  .carousel-cell {
+    width: 25%;
+  }
+  /*FONTS*/
+  .description{
+    font-size: 1.15em;
+  }
+}
+
+  /*BUTTON*/
