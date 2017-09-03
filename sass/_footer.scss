@@ -7,28 +7,28 @@
   color: #969696;
   font-family: 'Playfair Display';
   font-weight: normal;
-  font-style: normal;
+  font-style: normal;
 }
 .copyright {
   color: #fff;
   font-family: 'Playfair Display', serif;
   font-weight: normal;
-  font-style: normal;
+  font-style: normal;
   font-size: 15px;
 }
 .phone {
   padding-top: 10px;
   color: #fff;
   font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-style: normal;
+  font-weight: 300;
+  font-style: normal;
   font-size: 16px;
 }
 .email {
   text-decoration: underline;
   font-family: 'Playfair Display', serif;
-  font-weight: normal;
-  font-style: normal;
+  font-weight: normal;
+  font-style: normal;
   font-size: 16px;
 }
 .list-social {
@@ -60,7 +60,7 @@
 .media a{
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  font-style: normal;
+  font-style: normal;
   font-size: 16px;
   color: #fff;
   text-decoration: none;
@@ -75,27 +75,7 @@
 .menu a:hover {
   color: #b64036;
 }
-.category a:hover {
-  color: #b64036;
-}
+
 .menu a {
    text-decoration: none;
  }
-
-.screen-reader-text:focus {
-   clip: auto !important;
-   display: block;
-   height: auto;
-   left: 5px;
-   top: 5px;
-   width: auto;
-   z-index: 100000; /* above all content */
-}
-
-.screen-reader-text {
-   clip: rect(1px, 1px, 1px, 1px);
-   position: absolute !important;
-   height: 1px;
-   width: 1px;
-   overflow: hidden;
-}

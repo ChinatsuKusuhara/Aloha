@@ -10,9 +10,12 @@
   display: flex;
   flex-flow: row wrap;
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  font-style: normal;
+  font-weight: 500;
+  font-style: normal;
   font-size: 19px;
+    a:hover {
+      color: lightgoldenrodyellow; // FIND THE # for this color.
+    }
 }
 .rectangle {
   max-width: 100%;
@@ -30,37 +33,37 @@
 }
 .men {
   background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), 
-   url('images/pictures/mens-category.jpg');
+   url('../../images/pictures/mens-category.jpg');
   order: 0;
   background-size: cover;
 }
 .trends {
   background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), 
-   url('images/pictures/trends-category.jpg');
+   url('../../images/pictures/trends-category.jpg');
   order: 1;
   background-size: cover;
 }
 .glasses {
   background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), 
-   url('images/pictures/glasses-category.jpg');
+   url('../../images/pictures/glasses-category.jpg');
   order: 2;
   background-size: cover;
 }
 .sale {
   background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), 
-   url('images/pictures/sale-category.jpg');
+   url('../../images/pictures/sale-category.jpg');
   order: 3;
   background-size: cover;
 }
 .bags {
   background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),
-   url('images/pictures/bags-category.jpg');
+   url('../../images/pictures/bags-category.jpg');
   order: 4;
   background-size: cover;
 }
 .women {
   background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), 
-   url('images/pictures/womens-category.jpg');
+   url('../../images/pictures/womens-category.jpg');
   order: 5;
   background-size: cover;
 }
