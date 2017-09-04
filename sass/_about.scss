@@ -1,0 +1,6 @@
+/* ABOUT */ 
+.about-text {
+  @include tablet {
+    width: 720px;
+  }
+}

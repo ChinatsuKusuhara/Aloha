@@ -4,46 +4,89 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: stretch;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+    @include tablet {
+      flex-wrap: nowrap;
+    }
 }
 .aloha-logo {
   width: 120px;
   order:1;
   align-self: flex-start;
   padding-top: 15px;
+    @include tablet {
+      order: 1;
+      flex-basis: 14%;
+    }
+}
+.aloha-logo img {
+  @include tablet {
+    width: 120px;
+  }
 }
 .cart-logo {
   width: 50px;
   order: 2;
   align-self: flex-end;
-  padding-top: 15px;
+    @include tablet {
+      flex-basis: 7%;
+      order: 3;
+    }
+}
+.cart-logo img {
+  @include tablet {
+    width: 48px;
+  }
 }
 .banner-text {
   width: 82%;
   text-align: center;
   align-self: center;
 }
-.about-text {
-  width: 720px;
-  padding: 4rem 0;
-  
-}
 /*  MENU */
-.menu {
-  display: flex;
-  order: 3;
-  text-align: center;
-  border-top: 1px solid #d7d7d7;
-  width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-top: 1rem;
-  justify-content: space-around;
+// .menu {
+//   display: flex;
+//   order: 3;
+//   text-align: center;
+//   border-top: 1px solid #d7d7d7;
+//   width: 100%;
+//   padding-top: 1rem;
+//   padding-bottom: 1rem;
+//   margin-top: 1rem;
+//   justify-content: space-around;
+// }
+// .menu li {
+//   font-size: 16px;
+//   font-style: normal;
+//   text-transform: uppercase;
+//   color: #e2574c;
+// }
+.navigation-menu {
+  align-self: center;
+  flex: 1 0 auto;
+    @include tablet {
+      order: 2;
+      flex-basis: 60%;
+      padding-top: 1.5rem;
+    }
 }
-.menu li {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  font-style: normal;
-  text-transform: uppercase;
-  color: #e2574c;
+.navigation-menu ul {
+  border-top: 1px solid #d7d7d7;
+  padding-top: .5rem;
+  text-align: center;
+    @include tablet {
+      border-top: 0;
+      padding-top: 0;
+    }
+      li {
+        display: inline-block;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        margin: 0 .5rem;
+        text-transform: uppercase;
+      }
+      a {
+        color: #e2574c;
+      }
 }

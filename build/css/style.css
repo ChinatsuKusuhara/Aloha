@@ -149,7 +149,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.15rem;
   margin: auto;
   line-height: 35px;
   text-align: center; }
@@ -157,6 +157,10 @@ body {
 /* SCREEN READER */
 .screen-reader-text {
   display: none; }
+
+/* ALL THE SECTIONS */
+section {
+  padding: 4rem 0; }
 
 /* HEADER */
 .header {
@@ -170,7 +174,13 @@ body {
       flex-wrap: wrap;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
-          align-items: stretch; }
+          align-items: stretch;
+  padding-top: 1rem;
+  padding-bottom: .5rem; }
+  @media (min-width: 600px) {
+    .header {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; } }
 
 .aloha-logo {
   width: 120px;
@@ -180,6 +190,17 @@ body {
   -ms-flex-item-align: start;
       align-self: flex-start;
   padding-top: 15px; }
+  @media (min-width: 600px) {
+    .aloha-logo {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      -ms-flex-preferred-size: 14%;
+          flex-basis: 14%; } }
+
+@media (min-width: 600px) {
+  .aloha-logo img {
+    width: 120px; } }
 
 .cart-logo {
   width: 50px;
@@ -187,8 +208,18 @@ body {
       -ms-flex-order: 2;
           order: 2;
   -ms-flex-item-align: end;
-      align-self: flex-end;
-  padding-top: 15px; }
+      align-self: flex-end; }
+  @media (min-width: 600px) {
+    .cart-logo {
+      -ms-flex-preferred-size: 7%;
+          flex-basis: 7%;
+      -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
+              order: 3; } }
+
+@media (min-width: 600px) {
+  .cart-logo img {
+    width: 48px; } }
 
 .banner-text {
   width: 82%;
@@ -196,34 +227,38 @@ body {
   -ms-flex-item-align: center;
       align-self: center; }
 
-.about-text {
-  width: 720px;
-  padding: 4rem 0; }
-
 /*  MENU */
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
-  text-align: center;
-  border-top: 1px solid #d7d7d7;
-  width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-top: 1rem;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+.navigation-menu {
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
+  @media (min-width: 600px) {
+    .navigation-menu {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%;
+      padding-top: 1.5rem; } }
 
-.menu li {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  font-style: normal;
-  text-transform: uppercase;
-  color: #e2574c; }
+.navigation-menu ul {
+  border-top: 1px solid #d7d7d7;
+  padding-top: .5rem;
+  text-align: center; }
+  @media (min-width: 600px) {
+    .navigation-menu ul {
+      border-top: 0;
+      padding-top: 0; } }
+  .navigation-menu ul li {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    margin: 0 .5rem;
+    text-transform: uppercase; }
+  .navigation-menu ul a {
+    color: #e2574c; }
 
 /* HERO BANNER */
 .banner {
@@ -290,115 +325,6 @@ body {
   counter-increment: carousel-cell;
   text-align: center; }
 
-/*MEDIA TABLET SCREEN*/
-@media only screen and (min-width: 600px) {
-  .header {
-    max-width: 720px; }
-  /*MENU*/
-  .aloha-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    margin: 0;
-    padding: 0; }
-  .menu {
-    border-top: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    width: 60%;
-    margin: 0;
-    padding-top: 5rem; }
-  .cart-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    margin: 0;
-    padding-bottom: 1.15em; }
-  /*CATEGORIES*/
-  .rectangle {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    /*background-position: center;*/ }
-  .square {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
-    background-position: center; }
-  /*CAROUSEL*/
-  .carousel-cell {
-    width: 50%; }
-  .description {
-    font-size: 1.10em; }
-  /*FOOTER*/
-  .footer-social {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-left: 1rem; }
-  .info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: left;
-    padding-top: 1rem; }
-  .gone {
-    display: initial;
-    /*this will show media in tablet+web */
-    line-height: 2rem;
-    margin-left: 5px; }
-  .list-social {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: left; }
-  .fa {
-    margin-right: 5px; }
-  .wrapper {
-    max-width: 720px; } }
-
-/*MEDIA WEB SCREEN*/
-@media only screen and (min-width: 1240px) {
-  .banner {
-    height: 35rem;
-    background-size: cover, 16rem 42rem, contain; }
-  .header {
-    max-width: 1240px; }
-  .menu {
-    padding-top: 5rem; }
-  .rectangle {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    height: 20rem; }
-  .square {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
-    height: 20rem; }
-  /*Carousel*/
-  .carousel-cell {
-    width: 25%; }
-  /*FONTS*/ }
-
-/*BUTTON*/
 /*  CATEGORY */
 .category a {
   text-decoration: none;
@@ -637,3 +563,8 @@ input[type='email'] {
 
 .menu a {
   text-decoration: none; }
+
+/* ABOUT */
+@media (min-width: 600px) {
+  .about-text {
+    width: 720px; } }
