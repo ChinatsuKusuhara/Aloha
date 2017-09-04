@@ -14,7 +14,7 @@ prettyError = require('gulp-prettyError');
 //Gulp Tasks Below
 
 //Gulp Scripts Task
-gulp.task('scripts', ['lint'], function(){
+gulp.task('./js/scripts', ['lint'], function(){
 gulp.src('./js/*.js')
 .pipe(uglify())  //call the uglify function on the files 
 .pipe(rename({ extname: '.min.js'}))  //rename uglified file 
