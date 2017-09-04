@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -120,9 +119,6 @@ img {
   max-width: 100%;
   height: auto; }
 
-.clothing {
-  padding: 4rem 0; }
-
 body {
   width: 100%; }
 
@@ -130,26 +126,34 @@ body {
   display: none; }
 
 /* ALL H2 HEADING*/
+h2 {
+  font-style: italic;
+  margin-bottom: 2rem; }
+
 .heading-italic {
   font-family: 'Playfair Display', serif;
   font-weight: normal;
-  font-style: italic;
-  font-size: 35px;
-  text-align: center;
-  margin-bottom: 1.5rem; }
+  font-size: 2.25rem;
+  text-align: center; }
 
 /* CONTAINER */
 .container {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 2%; }
+  @media (min-width: 600px) {
+    .container {
+      width: 720px; } }
+  @media (min-width: 1240px) {
+    .container {
+      width: 1240px; } }
 
 /* PARAGRAPHS*/
 .description {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.15rem;
   margin: auto;
   line-height: 35px;
   text-align: center; }
@@ -175,35 +179,28 @@ section {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  padding-top: 1rem;
-  padding-bottom: .5rem; }
+  padding: 1rem; }
   @media (min-width: 600px) {
     .header {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap; } }
 
 .aloha-logo {
-  width: 120px;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
   -ms-flex-item-align: start;
-      align-self: flex-start;
-  padding-top: 15px; }
+      align-self: flex-start; }
   @media (min-width: 600px) {
     .aloha-logo {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
-              order: 1;
-      -ms-flex-preferred-size: 14%;
-          flex-basis: 14%; } }
+              order: 1; } }
 
-@media (min-width: 600px) {
-  .aloha-logo img {
-    width: 120px; } }
+.aloha-logo img {
+  width: 120px; }
 
 .cart-logo {
-  width: 50px;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
@@ -211,15 +208,12 @@ section {
       align-self: flex-end; }
   @media (min-width: 600px) {
     .cart-logo {
-      -ms-flex-preferred-size: 7%;
-          flex-basis: 7%;
       -webkit-box-ordinal-group: 4;
           -ms-flex-order: 3;
               order: 3; } }
 
-@media (min-width: 600px) {
-  .cart-logo img {
-    width: 48px; } }
+.cart-logo img {
+  width: 50px; }
 
 .banner-text {
   width: 82%;
@@ -229,11 +223,18 @@ section {
 
 /*  MENU */
 .navigation-menu {
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto; }
+  border-top: 1px solid #d7d7d7;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  text-decoration: none;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  width: 100%; }
   @media (min-width: 600px) {
     .navigation-menu {
       -webkit-box-ordinal-group: 3;
@@ -241,36 +242,42 @@ section {
               order: 2;
       -ms-flex-preferred-size: 60%;
           flex-basis: 60%;
-      padding-top: 1.5rem; } }
+      padding-top: 1.5rem;
+      border: 0; } }
 
-.navigation-menu ul {
-  border-top: 1px solid #d7d7d7;
-  padding-top: .5rem;
-  text-align: center; }
-  @media (min-width: 600px) {
-    .navigation-menu ul {
-      border-top: 0;
-      padding-top: 0; } }
-  .navigation-menu ul li {
-    display: inline-block;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    margin: 0 .5rem;
-    text-transform: uppercase; }
-  .navigation-menu ul a {
-    color: #e2574c; }
+@media (min-width: 600px) {
+  .navigation-menu ul {
+    border-top: 0;
+    padding-top: 0; } }
+
+.navigation-menu ul li {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  padding: 0 0.5rem;
+  text-transform: uppercase; }
+  @media (min-width: 1240px) {
+    .navigation-menu ul li {
+      padding: 0 2rem; } }
+
+.navigation-menu ul a {
+  color: #e2574c; }
 
 /* HERO BANNER */
 .banner {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/pictures/banner-girl.png") no-repeat center 70px, url("../../images/pictures/flower-bkgd.jpg") repeat-x center top;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url("../../images/pictures/banner-girl.png") no-repeat center 70px, url("../../images/pictures/flower-bkgd.jpg") repeat-x center top;
-  height: 400px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/pictures/banner-girl.png") no-repeat center 4rem, url("../../images/pictures/flower-bkgd.jpg") repeat-x center top;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url("../../images/pictures/banner-girl.png") no-repeat center 4rem, url("../../images/pictures/flower-bkgd.jpg") repeat-x center top;
+  height: 28.5rem;
   max-width: 100%;
   position: relative;
-  background-size: cover, 150px 369px, cover;
+  background-size: cover, 10rem 26rem, cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media (min-width: 1240px) {
+    .banner {
+      background-size: cover, 16rem 42rem, contain;
+      height: 35rem; } }
 
 .header-new {
   font-family: 'Raleway', sans-serif;
@@ -296,12 +303,12 @@ section {
 .bold {
   font-family: 'Playfair Display', serif;
   font-weight: bold;
-    font-style: normal; }
+  font-style: normal; }
 
 .clothes {
   font-family: 'Playfair Display', serif;
-    font-weight: normal;
-    font-style: normal;
+  font-weight: normal;
+  font-style: normal;
   text-transform: capitalize;
   font-size: 23px;
   color: #e2574c;
@@ -310,11 +317,16 @@ section {
 .merchandise {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-    font-style: normal;
+  font-style: normal;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: .75rem;
   color: #969696;
   line-height: 2rem; }
+
+.price,
+.merchandise {
+  color: #969696;
+  font-weight: 500; }
 
 /*Carousel */
 .carousel-cell {
@@ -327,6 +339,16 @@ section {
   @media (min-width: 600px) {
     .carousel-cell {
       width: 50%; } }
+  @media (min-width: 1240px) {
+    .carousel-cell {
+      width: 25%; } }
+
+button {
+  display: none; }
+
+/* PRODUCTS IN CAROUSEL */
+.clothing h2 {
+  padding-bottom: 4rem; }
 
 /*  CATEGORY */
 .category {
@@ -368,6 +390,14 @@ section {
     .rectangle {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; } }
+  @media (min-width: 1240px) {
+    .rectangle {
+      height: 20rem; } }
+
+@media (min-width: 600px) {
+  .rectangle:first-child {
+    border-left: 0;
+    border-right: 4px solid #fff; } }
 
 .square {
   max-width: 50%;
@@ -384,6 +414,13 @@ section {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
       max-width: 25%; } }
+  @media (min-width: 1240px) {
+    .square {
+      height: 20rem; } }
+
+@media (min-width: 600px) {
+  .square {
+    border-left: 4px solid #fff; } }
 
 .men {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/pictures/mens-category.jpg");
@@ -456,6 +493,9 @@ section {
   width: 90%;
   margin: 2rem auto 0;
   display: block; }
+  @media (min-width: 600px) {
+    .email-sub {
+      width: 67%; } }
 
 input {
   color: #2d2d2d;
@@ -485,41 +525,30 @@ input[type='email'] {
   border: 0;
   border-radius: 25px; }
 
+.wrapper {
+  text-align: center; }
+  @media (min-width: 600px) {
+    .wrapper {
+      max-width: 720px; } }
+
 /*  FOOTER */
 .info {
-  line-height: 1.5rem; }
-
-.address {
-  padding-top: 10px;
-  color: #969696;
-  font-family: 'Playfair Display';
-  font-weight: normal;
-  font-style: normal; }
-
-.copyright {
-  color: #fff;
-  font-family: 'Playfair Display', serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 15px; }
-
-.phone {
-  padding-top: 10px;
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 16px; }
-
-.email {
-  text-decoration: underline;
-  font-family: 'Playfair Display', serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 16px; }
+  line-height: 1.5rem;
+  padding-left: 1rem; }
+  .info .copy-right {
+    padding: 4rem 0 1.5rem;
+    line-height: 1.5rem; }
+  .info .copyright-contact {
+    padding-bottom: 1.5rem; }
+  .info .address {
+    line-height: 1.5rem;
+    padding-bottom: 3rem;
+    color: #969696; }
+  @media (min-width: 600px) {
+    .info {
+      text-align: left; } }
 
 .list-social {
-  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,31 +560,40 @@ input[type='email'] {
   padding-right: 100px;
   padding-left: 100px;
   padding-top: 2rem; }
+  @media (min-width: 600px) {
+    .list-social {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 4rem 2rem 0 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .footer-social {
   background-color: #242424;
+  color: #e1e1e1;
   text-align: center;
-  padding: 3rem 0; }
+  font-family: 'Playfair Display', serif; }
+  @media (min-width: 600px) {
+    .footer-social {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
 
 /*  SOCIAL MEDIA ICONS  */
-.icons {
-  color: #fff;
-  background-color: #242424;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+@media (min-width: 600px) {
+  .media {
+    display: block;
+    text-align: left;
+    padding: 0.5rem 0; } }
 
-.wrapper {
-  text-align: center; }
+.media a:hover {
+  color: #b64036; }
 
 .media a {
   font-family: 'Raleway', sans-serif;
@@ -568,11 +606,12 @@ input[type='email'] {
 .gone {
   display: none;
   /* this will make media disappear on MOBILE */ }
+  @media (min-width: 600px) {
+    .gone {
+      display: unset;
+      padding-left: .5rem; } }
 
 /*HOVER */
-.media a:hover {
-  color: #b64036; }
-
 .menu a:hover {
   color: #b64036; }
 

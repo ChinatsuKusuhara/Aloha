@@ -4,40 +4,30 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: stretch;
-  padding-top: 1rem;
-  padding-bottom: .5rem;
+  padding: 1rem;
     @include tablet {
       flex-wrap: nowrap;
     }
 }
 .aloha-logo {
-  width: 120px;
   order:1;
   align-self: flex-start;
-  padding-top: 15px;
     @include tablet {
       order: 1;
-      flex-basis: 14%;
     }
 }
 .aloha-logo img {
-  @include tablet {
-    width: 120px;
-  }
+  width: 120px;
 }
 .cart-logo {
-  width: 50px;
   order: 2;
   align-self: flex-end;
     @include tablet {
-      flex-basis: 7%;
       order: 3;
     }
 }
 .cart-logo img {
-  @include tablet {
-    width: 48px;
-  }
+  width: 50px;
 }
 .banner-text {
   width: 82%;
@@ -46,18 +36,22 @@
 }
 /*  MENU */
 .navigation-menu {
-  align-self: center;
-  flex: 1 0 auto;
+  border-top: 1px solid #d7d7d7;
+  text-align: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  text-decoration: none;
+  order: 3;
+  width: 100%;
     @include tablet {
       order: 2;
       flex-basis: 60%;
       padding-top: 1.5rem;
+      border: 0;
     }
 }
 .navigation-menu ul {
-  border-top: 1px solid #d7d7d7;
-  padding-top: .5rem;
-  text-align: center;
     @include tablet {
       border-top: 0;
       padding-top: 0;
@@ -66,8 +60,11 @@
         display: inline-block;
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
-        margin: 0 .5rem;
+        padding: 0 0.5rem;
         text-transform: uppercase;
+        @include desktop {
+          padding: 0 2rem;
+        }
       }
       a {
         color: #e2574c;

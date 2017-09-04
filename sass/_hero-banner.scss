@@ -1,13 +1,17 @@
 /* HERO BANNER */ 
 .banner {
   background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), 
-    url('../../images/pictures/banner-girl.png') no-repeat center 70px, 
+    url('../../images/pictures/banner-girl.png') no-repeat center 4rem, 
     url('../../images/pictures/flower-bkgd.jpg') repeat-x center top;
-  height: 400px;
+  height: 28.5rem;
   max-width: 100%;
   position: relative;
-  background-size: cover, 150px 369px, cover;
+  background-size: cover, 10rem 26rem, cover;
   display: flex;
+    @include desktop {
+      background-size: cover, 16rem 42rem, contain;
+      height: 35rem;
+    }
   }
 .header-new {
   font-family: 'Raleway', sans-serif;
