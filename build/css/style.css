@@ -324,6 +324,9 @@ section {
   border-radius: 5px;
   counter-increment: carousel-cell;
   text-align: center; }
+  @media (min-width: 600px) {
+    .carousel-cell {
+      width: 50%; } }
 
 /*  CATEGORY */
 .category {
@@ -332,7 +335,8 @@ section {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  text-align: center; }
+  text-align: center;
+  padding: 0; }
   .category a {
     text-decoration: none;
     text-transform: uppercase;
